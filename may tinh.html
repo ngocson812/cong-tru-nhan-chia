@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <style>
+        button{
+            color: black;
+            background: lightpink;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="3"><input type="number" id="st1"></td>
+        <td colspan="3"><input type="number" id="st2"></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="cong()">Addition(+)</button>
+        </td>
+        <td>
+            <button onclick="tru()">Subtraction(-)</button>
+        </td>
+        <td>
+            <button onclick="nhan()">Multiplication(X)</button>
+        </td>
+        <td>
+            <button onclick="chia()">Division(/)</button>
+        </td>
+    </tr>
+</table>
+<script>
+function cong() {
+    var st1 = +document.getElementById("st1").value;
+    var st2 = +document.getElementById("st2").value;
+    var cong = st1 + st2;
+    alert("Kết quả: " + cong);}
+function tru() {
+    var st1 = +document.getElementById("st1").value;
+    var st2 = +document.getElementById("st2").value;
+    var tru = st1 - st2;
+    alert("Kết quả: " + tru);
+}
+function nhan() {
+    var st1 = +document.getElementById("st1").value;
+    var st2 = +document.getElementById("st2").value;
+    var nhan = st1 * st2;
+    alert("Kết quả: " + nhan);
+}
+function chia() {
+    var st1 = +document.getElementById("st1").value;
+    var st2 = +document.getElementById("st2").value;
+    var chia = st1 / st2;
+    alert("Kết quả: " + chia);
+}
+</script>
+</body>
+</html>
